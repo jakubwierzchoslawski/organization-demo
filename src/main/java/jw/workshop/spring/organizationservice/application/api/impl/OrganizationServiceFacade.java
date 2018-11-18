@@ -10,11 +10,11 @@ import org.springframework.stereotype.Service;
 
 import jw.workshop.spring.organizationservice.application.api.OrganizationBusinessService;
 import jw.workshop.spring.organizationservice.domain.model.OrganizationDO;
-import jw.workshop.spring.organizationservice.domain.model.OrganizationItemRepository;
-import jw.workshop.spring.organizationservice.domain.model.OrganizationRepository;
 import jw.workshop.spring.organizationservice.domain.model.ext.UserExt;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationEntity;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationItemEntity;
+import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationItemRepository;
+import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationRepository;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationType;
 import jw.workshop.spring.organizationservice.infrastructure.data.jpa.OrganizationModelMapper;
 

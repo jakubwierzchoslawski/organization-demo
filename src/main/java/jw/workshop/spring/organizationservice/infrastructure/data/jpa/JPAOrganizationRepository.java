@@ -11,9 +11,9 @@ import javax.persistence.PersistenceContext;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
-import jw.workshop.spring.organizationservice.domain.model.OrganizationRepository;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationEntity;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationItemEntity;
+import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationRepository;
 
 /**
  * Repository JPA implementation.

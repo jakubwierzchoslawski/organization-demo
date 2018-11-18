@@ -1,8 +1,6 @@
-package jw.workshop.spring.organizationservice.domain.model;
+package jw.workshop.spring.organizationservice.domain.model.jpa;
 
 import java.util.List;
-
-import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationEntity;
 
 /**
  * JPA domain repositories. In theory it should be infrastructure unrelated

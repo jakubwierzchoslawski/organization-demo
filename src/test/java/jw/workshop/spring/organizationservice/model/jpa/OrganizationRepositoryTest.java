@@ -19,9 +19,9 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import jw.workshop.spring.organizationservice.OrganizationServiceApplication;
-import jw.workshop.spring.organizationservice.domain.model.OrganizationRepository;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationEntity;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationItemEntity;
+import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationRepository;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationType;
 import lombok.Data;
 

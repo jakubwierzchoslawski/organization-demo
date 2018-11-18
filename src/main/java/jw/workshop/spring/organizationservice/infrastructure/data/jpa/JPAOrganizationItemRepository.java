@@ -12,9 +12,9 @@ import javax.persistence.PersistenceContext;
 import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.stereotype.Repository;
 
-import jw.workshop.spring.organizationservice.domain.model.OrganizationItemRepository;
 import jw.workshop.spring.organizationservice.domain.model.ext.UserExt;
 import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationItemEntity;
+import jw.workshop.spring.organizationservice.domain.model.jpa.OrganizationItemRepository;
 
 /**
  * Repository JPA implementation
