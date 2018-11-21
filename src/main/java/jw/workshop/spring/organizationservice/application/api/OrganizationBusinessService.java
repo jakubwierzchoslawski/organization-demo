@@ -15,6 +15,7 @@ import jw.workshop.spring.organizationservice.domain.model.ext.UserExt;
 public interface OrganizationBusinessService {
 
 	OrganizationDO addNewOrganization(OrganizationDO inputData);
+
 	UserExt assignUserToOrganization(UserExt user, OrganizationDO organization);
 
 	List<OrganizationDO> listOrganizatoins();

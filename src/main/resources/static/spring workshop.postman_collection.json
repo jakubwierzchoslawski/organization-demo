@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "983c797b-d54a-45a7-90e8-b6dad027eec9",
+		"name": "spring workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add organization",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\" : {\n\t\t\"externalUserId\" : 1001,\n\t\t\"name\" : \"some name\"\n\t},\n\t\"organization\" : {\n\t\"name\" : \"My company\",\n\t\"externalId\" : 1001\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8190/organization",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8190",
+					"path": [
+						"organization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assign user to organization",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\" : {\n\t\t\"externalUserID\" : 1001,\n\t\t\"name\" : \"some name\"\n\t},\n\t\"organization\" : {\n\t\"ID\" : 1 ,\n\t\t\"externalId\" : 1001,\n\t\"name\" : \"My company\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8190/org/organizaton/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8190",
+					"path": [
+						"org",
+						"organizaton",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list organizations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8190/org/organizations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8190",
+					"path": [
+						"org",
+						"organizations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
