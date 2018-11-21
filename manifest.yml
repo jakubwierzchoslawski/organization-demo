@@ -1,0 +1,13 @@
+---
+applications: 
+- name: organization-service
+  path: target/organization-service-1.0.jar
+  memory: 512M
+
+  instances: 1
+  services: 
+  - postgres-external
+  env: 
+  SPRING_PROFILES_ACTIVE: cloud
+  JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+    
